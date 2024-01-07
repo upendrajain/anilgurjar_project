@@ -1,0 +1,52 @@
+#services h1{
+    font-size: 6rem;
+    font-family: 'Paprika';
+  }
+  #services h3{
+    font-size: 7rem;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.2rem;
+    font-style: italic;
+    font-family: 'Paprika';
+    text-transform: capitalize;
+  }
+  #services figure
+  {
+      position: relative;
+    box-shadow:0 0 5px red;
+  }
+  #services figure img
+  {
+      width: 20vmin;
+      height: 20vmin;
+    margin: auto;
+      border:10px solid #fff;
+  }
+  .services_content
+  {
+      position: absolute;
+      top:0%;
+      width:100%;
+      height:100%;
+      display: grid;
+      place-items:center;
+      opacity: 0;
+      overflow: hidden;
+      box-sizing: border-box;
+      transition: all 0.5s linear;
+      background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+  }
+  .services_content a
+  {
+      text-decoration: none;
+      color:#fff;
+      font-size: 2rem;
+  }
+  .services_content a:hover
+  {
+      cursor:pointer;
+  }
+  .services_content:hover
+  {
+      opacity: 1;
+  }

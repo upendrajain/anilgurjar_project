@@ -1,0 +1,499 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+html
+{
+  scroll-behavior:smooth;
+  transition:all 0.5s linear;
+  font-size: 62.5%;
+}
+nav
+{
+	z-index:9;
+}
+.nav_modified
+{
+	background:transparent;
+}
+.nav_modified ul li a
+{
+	color:white !important;
+  font-size: 1.8rem;
+}
+.nav_modified .navbar-brand{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.navbar-toggler span{
+  font-size: 3rem;
+}
+#sidebar
+{
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100vh;
+  background:#fff;
+  z-index: 9;
+  transition: all 0.5s linear;
+  overflow: hidden;
+}
+#sidebar .navbar-nav .closebtn{
+  font-size: 5rem !important;
+}
+#sidebar ul
+{
+  text-align: center;
+}
+#sidebar ul li
+{
+  padding-top:20px;
+}
+#sidebar ul li a:hover{
+  background-color: #000 !important;
+  color: #fff !important;
+  border-radius: 5px;
+  margin: 0px 20px;
+}
+#sidebar a
+{
+  font-size: 3rem;
+  color:#000;
+  position: relative;
+}
+.banner::before
+{
+	width:100%;
+	height:100vh;
+	content:"";
+	position:absolute;
+	top:0%;
+	left:0;
+	background-image:linear-gradient(rgba(0,0,0,0.8) 50%,rgba(0,0,0,0.8) 50%),url('./img/testing_main.jpg') !important;
+	background-size:100% 100% !important;
+  z-index: -1;
+}
+.banner-content 
+{
+	width:100%;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	mix-blend-mode:screen;
+	color:white !important;
+  font-family: 'Red Rose', cursive;
+	text-transform:uppercase;
+}
+.banner-content h1
+{
+	font-size: 3rem;
+	mix-blend-mode:multiply;
+}
+.banner-content h1:first-letter
+{
+	color:red;
+	font-size: 4rem;
+}
+.banner-content h2
+{
+	font-size: 7rem;
+	text-transform: capitalize;
+	line-height: 60px;
+}
+.banner-content h2:first-letter
+{
+	color:red;
+	font-size: 8rem;
+}
+.banner-content span
+{
+	margin-top: 20px;
+	padding:5px 20px;
+	font-size: 2.5rem;
+  font-weight: bold;
+	border-left:1px solid white;
+	border-right:1px solid white;
+}
+.banner_social_icon
+{
+	margin-top: 50px;
+	font-size: 5rem;
+	cursor: pointer;
+}
+.banner_social_icon a
+{
+	margin:0px 30px;
+	color:white;
+}
+.banner_social_icon i:hover
+{
+	cursor: pointer;
+}
+.banner-content .down
+{
+  margin-top: 40px;
+  animation: dropdown 2s linear infinite;
+  /*transition:all 0.5s linear;*/
+}
+@keyframes dropdown
+{
+  0%{transform:translateY(-80%);opacity:0.1;}
+  100%{transform:translateY(80%);}
+}
+.banner-content .down a
+{
+  font-size: 1.8rem;
+  color:#fff;
+  border:1px solid #fff;
+  border-radius:100px;
+  padding:10px 10px;
+}
+/*---- About Section ----*/
+#about 
+{
+	width: 100%;
+  /* height: 100vh; */
+  height: 100%;
+}
+.about_content
+{
+  width: 100%;
+  height: 100%;
+	display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 50px auto;
+  /* background-color: aquamarine; */
+}
+#about img
+{
+	width: 40rem;
+	height: 40rem;
+	border: 20px solid white;
+	box-shadow:0 0 5px #000,inset 0 0 60px red;
+}
+#about h3{
+  font-size: 6rem;
+}
+#about h3:first-letter
+{
+  font-size: 7rem;
+	color:red;
+}
+#about h4{
+  font-size: 4.5rem;;
+}
+#about h4:first-line
+{
+	color:red;
+}
+.about_content p{
+  font-size: 2rem;
+  text-align: justify;
+}
+/*---- services Section Start ----*/
+@font-face {
+  font-family: 'Paprika';
+  src: url('Paprika-Regular.ttf') format('Paprika-Regular.ttf');
+  /* Add additional font formats if needed */
+}
+#services{
+  width: 100%;
+  height: 100%;
+  /* background-color: aquamarine; */
+  padding: 50px auto;
+}
+#services h1{
+  font-size: 5rem;
+  font-family: 'Paprika';
+}
+#services .card
+{
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#services .card:hover
+{
+  box-shadow:0 0 2px red;
+  
+}
+#services h3{
+  font-size: 8rem;
+  word-spacing: 0.2rem;
+  letter-spacing: 0.2rem;
+  font-style: italic;
+  font-family: 'Paprika';
+  text-transform: capitalize;
+}
+#services figure
+{
+	position: relative;
+}
+#services figure img
+{
+	width: 20vmin;
+	height: 20vmin;
+  margin: auto;
+	border:10px solid #fff;
+}
+#services figure h5{
+  font-family: 'Paprika';
+  font-weight: bold;
+}
+
+#git
+{
+  width:100%;
+  background:#f3f3f3;
+}
+#git a button{
+  font-size: 1.6rem;
+}
+/*---- footer Section Start ----*/
+footer 
+{
+	bottom:0;
+	width:100%;
+	height:auto;
+	background:linear-gradient(rgba(0,0,0,1) 50%,rgba(0,0,0,1) 50%);
+	background-size: 100% 100%;
+	position: relative;
+  padding-top:50px;
+}
+footer h1
+{
+  color:red;
+  font-size: 5rem;
+}
+footer h2
+{
+  color:white;
+  font-size: 4rem;
+}
+footer h5
+{
+  line-height: 1;
+}
+footer form 
+{
+  margin-top: 50px;
+}
+footer form label
+{
+  font-size: 1.8rem;
+  color:gray;
+  margin: 5px 0;
+}
+footer form .input_box
+{
+  border:0;
+  border-bottom:1px solid gray;
+  background:#000;
+  outline: none;
+  border-radius:0;
+  transition:all 0.3s linear;
+  font-size: 1.8rem;
+  padding-left: 0;
+}
+footer form .input_box:focus
+{
+  box-shadow:0 0 1px #000;
+  outline:none;
+  color:#fff;
+  background: #000;
+  border-bottom:1px solid red;
+}
+footer button[type="submit"]
+{
+  background:red;
+  border:0;
+  border:1px solid red;
+  width: 100%;
+  margin:15px 0px;
+  font-size: 1.8rem;
+}
+footer button[type="submit"]:hover,
+footer button[type="submit"]:focus
+{
+  background:red;
+  border:0;
+  border:1px solid red;
+  box-shadow: 0 0 1px red;
+}
+footer icon
+{
+  font-size: 4rem;
+  color:#fff;
+}
+footer icon h6
+{
+  font-size: 1.8rem;
+  margin-top: 10px;
+  color:red;
+}
+footer .address p
+{
+  margin-top:10px;
+  padding:-5px 0px;
+  font-size: 1.6rem;
+}
+footer .bottom_foot
+{ 
+  padding:20px 0px;
+}
+footer .bottom_foot p
+{
+  font-size: 2rem;
+}
+.footer_social_icon
+{
+  font-size: 2rem;
+  cursor: pointer;
+}
+.footer_social_icon a
+{
+  margin:0px 30px;
+  color:white;
+}
+.footer_social_icon i:hover
+{
+  cursor: pointer;
+}
+/* @media only screen and (min-width: 768px)
+{
+  #about
+  {
+    width: 100%;
+    height: 100%;
+  }
+} */
+@media only screen and (max-width: 768px)
+{
+  html{
+    font-size: 55%;
+  }
+  .banner::before
+  {
+    width:100%;
+    height: 100%;
+    content:"";
+    position:absolute;
+  }
+	.banner-content h2
+	{
+		/* font-size:3rem; */
+		text-transform: capitalize;
+		line-height: 60px;
+	}
+	.banner-content h2:first-letter
+	{
+		color:red;
+		/* font-size: 4rem; */
+	}
+	.banner_social_icon
+	{
+		margin-top: 50px;
+		cursor: pointer;
+	}
+  #about
+  {
+    width: 100%;
+    height: 100%;
+  }
+  #services .card
+  {
+    margin: 0 10px;
+  }
+  footer h2
+  {
+    color:white;
+    font-size: 1.5rem;
+  }
+  footer h5
+  {
+    font-size:1rem;
+  }
+  footer .bottom_foot
+  { 
+    padding-top:20px 0px;
+  }
+}
+@media only screen and (max-width: 576px)
+{
+  html{
+    font-size: 45%;
+  }
+	.banner-content h2
+	{
+		/* font-size:2rem; */
+		text-transform: capitalize;
+		line-height: 60px;
+	}
+	.banner-content h2:first-letter
+	{
+		color:red;
+		/* font-size: 3rem; */
+	}
+	.banner_social_icon
+	{
+		margin-top: 50px;
+		cursor: pointer;
+	}
+	.banner_social_icon a
+	{
+		margin:0px 20px;
+	}
+  #git a button
+  {
+    margin:10px 0px;
+  }
+   footer h2
+  {
+    color:white;
+    font-size: 1.5rem;
+  }
+  footer h5
+  {
+    font-size:0.7rem;
+  }
+	footer .bottom_foot
+  { 
+    /*padding-top:300px;*/
+  }
+  .footer_social_icon a
+  {
+    margin:0px 20px;
+    color:white;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 400px)
+{
+  html{
+    font-size:35%;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 199px)
+{
+  html{
+    font-size: 20%;
+  }
+}
+/*// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)*/
+/* @media (min-width: 576px) { 
+	
+} */
+
+/*// Medium devices (tablets, 768px and up)*/
+/* @media (min-width: 768px) { ... } */
+
+/*// Large devices (desktops, 992px and up)*/
+/* @media (min-width: 992px) { ... } */
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+/* @media (min-width: 1200px) {} */
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+/* @media (min-width: 1400px) {} */
